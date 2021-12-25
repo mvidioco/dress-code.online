@@ -1,0 +1,2 @@
+function t142_checkSize(recid){var el=$("#rec"+recid).find(".t142__submit");if(el.length){var btnheight=el.height()+5;var textheight=el[0].scrollHeight;if(btnheight<textheight){var btntext=el.text();el.addClass("t142__submit-overflowed")}}}
+function t608_setHeight(recid){var el=$("#rec"+recid);var image=el.find(".t608__bgimg");image.each(function(){var width=$(this).attr("data-image-width");var height=$(this).attr("data-image-height");var ratio=height/width;var padding=ratio*100;$(this).css("padding-bottom",padding+"%")})}
